@@ -454,7 +454,7 @@
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(105, 20);
             this.textBox3.TabIndex = 11;
-            this.textBox3.Text = "2000";
+            this.textBox3.Text = "20000";
             // 
             // label17
             // 
