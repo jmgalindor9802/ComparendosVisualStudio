@@ -30,14 +30,22 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtVelocidad = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtPlaca = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtInfra1 = new System.Windows.Forms.TextBox();
-            this.txtProm1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtTotal1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtProm1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtInfra1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtTotal2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -60,27 +68,19 @@
             this.txtInfra4 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgbMultas = new System.Windows.Forms.DataGridView();
             this.colplaca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colmulta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colvelocidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colvelocidadlimite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button2 = new System.Windows.Forms.Button();
+            this.colmulta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgbMultas)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -98,9 +98,9 @@
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtVelocidad);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtPlaca);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label2);
@@ -111,6 +111,82 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregar comparendo";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(82, 135);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(125, 28);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Comparendo";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(138, 101);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(105, 20);
+            this.textBox3.TabIndex = 11;
+            this.textBox3.Text = "20000";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(14, 108);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(90, 13);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "Multa establecida";
+            // 
+            // txtVelocidad
+            // 
+            this.txtVelocidad.Location = new System.Drawing.Point(138, 75);
+            this.txtVelocidad.Name = "txtVelocidad";
+            this.txtVelocidad.Size = new System.Drawing.Size(105, 20);
+            this.txtVelocidad.TabIndex = 5;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(14, 82);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(54, 13);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "Velocidad";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // txtPlaca
+            // 
+            this.txtPlaca.Location = new System.Drawing.Point(137, 49);
+            this.txtPlaca.Name = "txtPlaca";
+            this.txtPlaca.Size = new System.Drawing.Size(105, 20);
+            this.txtPlaca.TabIndex = 3;
+            this.txtPlaca.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(13, 56);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(89, 13);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Registro vehiculo";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Cuadrante 1",
+            "Cuadrante 2",
+            "Cuadrante 3",
+            "Cuadrante 4"});
+            this.comboBox1.Location = new System.Drawing.Point(137, 19);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(106, 21);
+            this.comboBox1.TabIndex = 1;
             // 
             // label2
             // 
@@ -137,23 +213,22 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cuadrante 1";
             // 
-            // label3
+            // txtTotal1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Total infracciones";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.txtTotal1.Location = new System.Drawing.Point(124, 93);
+            this.txtTotal1.Name = "txtTotal1";
+            this.txtTotal1.ReadOnly = true;
+            this.txtTotal1.Size = new System.Drawing.Size(82, 20);
+            this.txtTotal1.TabIndex = 5;
             // 
-            // txtInfra1
+            // label5
             // 
-            this.txtInfra1.Location = new System.Drawing.Point(124, 22);
-            this.txtInfra1.Name = "txtInfra1";
-            this.txtInfra1.ReadOnly = true;
-            this.txtInfra1.Size = new System.Drawing.Size(82, 20);
-            this.txtInfra1.TabIndex = 1;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(16, 100);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Total multas";
             // 
             // txtProm1
             // 
@@ -172,22 +247,23 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Multa promedio";
             // 
-            // txtTotal1
+            // txtInfra1
             // 
-            this.txtTotal1.Location = new System.Drawing.Point(124, 93);
-            this.txtTotal1.Name = "txtTotal1";
-            this.txtTotal1.ReadOnly = true;
-            this.txtTotal1.Size = new System.Drawing.Size(82, 20);
-            this.txtTotal1.TabIndex = 5;
+            this.txtInfra1.Location = new System.Drawing.Point(124, 22);
+            this.txtInfra1.Name = "txtInfra1";
+            this.txtInfra1.ReadOnly = true;
+            this.txtInfra1.Size = new System.Drawing.Size(82, 20);
+            this.txtInfra1.TabIndex = 1;
             // 
-            // label5
+            // label3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 100);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Total multas";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(16, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Total infracciones";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // groupBox3
             // 
@@ -399,75 +475,11 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Reiniciar";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Cuadrante 1",
-            "Cuadrante 2",
-            "Cuadrante 3",
-            "Cuadrante 4"});
-            this.comboBox1.Location = new System.Drawing.Point(137, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(106, 21);
-            this.comboBox1.TabIndex = 1;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(13, 56);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(89, 13);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Registro vehiculo";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(137, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(105, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(138, 75);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(105, 20);
-            this.textBox2.TabIndex = 5;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(14, 82);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(54, 13);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "Velocidad";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(138, 101);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(105, 20);
-            this.textBox3.TabIndex = 11;
-            this.textBox3.Text = "20000";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(14, 108);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(90, 13);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "Multa establecida";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.dataGridView1);
+            this.groupBox6.Controls.Add(this.dgbMultas);
             this.groupBox6.Location = new System.Drawing.Point(306, 42);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(462, 168);
@@ -475,28 +487,24 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Ver multas";
             // 
-            // dataGridView1
+            // dgbMultas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgbMultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgbMultas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colplaca,
-            this.colmulta,
             this.colvelocidad,
-            this.colvelocidadlimite});
-            this.dataGridView1.Location = new System.Drawing.Point(14, 16);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(442, 148);
-            this.dataGridView1.TabIndex = 0;
+            this.colvelocidadlimite,
+            this.colmulta});
+            this.dgbMultas.Location = new System.Drawing.Point(14, 16);
+            this.dgbMultas.Name = "dgbMultas";
+            this.dgbMultas.Size = new System.Drawing.Size(442, 148);
+            this.dgbMultas.TabIndex = 0;
+            this.dgbMultas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // colplaca
             // 
             this.colplaca.HeaderText = "Placa";
             this.colplaca.Name = "colplaca";
-            // 
-            // colmulta
-            // 
-            this.colmulta.HeaderText = "Multa";
-            this.colmulta.Name = "colmulta";
             // 
             // colvelocidad
             // 
@@ -508,20 +516,16 @@
             this.colvelocidadlimite.HeaderText = "Velocidad limite";
             this.colvelocidadlimite.Name = "colvelocidadlimite";
             // 
-            // button2
+            // colmulta
             // 
-            this.button2.Location = new System.Drawing.Point(82, 135);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 28);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Comparendo";
-            this.button2.UseVisualStyleBackColor = true;
+            this.colmulta.HeaderText = "Multa";
+            this.colmulta.Name = "colmulta";
             // 
             // Comparendos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(785, 579);
+            this.ClientSize = new System.Drawing.Size(787, 579);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox5);
@@ -544,7 +548,7 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgbMultas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -585,18 +589,18 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtVelocidad;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPlaca;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgbMultas;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn colplaca;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colmulta;
         private System.Windows.Forms.DataGridViewTextBoxColumn colvelocidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colvelocidadlimite;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colmulta;
     }
 }
 

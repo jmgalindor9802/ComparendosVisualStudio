@@ -16,7 +16,7 @@ namespace Comparendos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Comparendos());
+            Application.Run(new Tienda());
         }
     }
 }
